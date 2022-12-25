@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "version": "1.2",
+  "name": "Lead Tracker",
+  "action": {
+    "default_popup": "extension.html",
+    "default_icon": "Logo2.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://google.com/"],
+      "css": ["/extension.css"],
+      "js": ["/extension.js"]
+    }
+  ],
+  "permissions": ["tabs"]
+}
